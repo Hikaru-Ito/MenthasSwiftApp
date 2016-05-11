@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		83145E2D1CE3017700F0679D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E2C1CE3017700F0679D /* MainViewController.swift */; };
 		83145E2F1CE322CB00F0679D /* HExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E2E1CE322CB00F0679D /* HExtentions.swift */; };
+		83145E321CE3388E00F0679D /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E311CE3388E00F0679D /* FeedsViewController.swift */; };
+		83145E341CE33F3D00F0679D /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E331CE33F3D00F0679D /* CategoryData.swift */; };
 		8347E15A1CE23CAA008F679D /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347E13C1CE23CAA008F679D /* AsyncButton.swift */; };
 		8347E15B1CE23CAA008F679D /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347E13D1CE23CAA008F679D /* AsyncImageView.swift */; };
 		8347E15C1CE23CAA008F679D /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347E13E1CE23CAA008F679D /* AutoTextView.swift */; };
@@ -43,13 +45,11 @@
 		83DCFD521CE1CC1E004F5502 /* Menthas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83DCFD501CE1CC1E004F5502 /* Menthas.xcdatamodeld */; };
 		83DCFD541CE1CC1E004F5502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83DCFD531CE1CC1E004F5502 /* Assets.xcassets */; };
 		83DCFD571CE1CC1E004F5502 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83DCFD551CE1CC1E004F5502 /* LaunchScreen.storyboard */; };
-		83DCFD611CE1D47B004F5502 /* FeedsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DCFD601CE1D47B004F5502 /* FeedsTableViewController.swift */; };
 		83DCFDA11CE1E24E004F5502 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DCFDA01CE1E24E004F5502 /* FeedTableViewCell.swift */; };
 		83DCFDBF1CE20910004F5502 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DCFDBB1CE20910004F5502 /* Alamofire.framework */; };
 		83DCFDC01CE20910004F5502 /* PagingMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DCFDBC1CE20910004F5502 /* PagingMenuController.framework */; };
 		83DCFDC11CE20910004F5502 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DCFDBD1CE20910004F5502 /* SwiftyJSON.framework */; };
 		83DCFDC21CE20910004F5502 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DCFDBE1CE20910004F5502 /* WebImage.framework */; };
-		83DCFDC41CE20D3F004F5502 /* FeedsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DCFDC31CE20D3F004F5502 /* FeedsData.swift */; };
 		83DCFDC71CE22789004F5502 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DCFDC61CE22789004F5502 /* WebViewController.swift */; };
 		83DCFDC91CE22DF0004F5502 /* FeedsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DCFDC81CE22DF0004F5502 /* FeedsService.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +57,8 @@
 /* Begin PBXFileReference section */
 		83145E2C1CE3017700F0679D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		83145E2E1CE322CB00F0679D /* HExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HExtentions.swift; sourceTree = "<group>"; };
+		83145E311CE3388E00F0679D /* FeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
+		83145E331CE33F3D00F0679D /* CategoryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
 		8347E13C1CE23CAA008F679D /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		8347E13D1CE23CAA008F679D /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		8347E13E1CE23CAA008F679D /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
@@ -94,13 +96,11 @@
 		83DCFD531CE1CC1E004F5502 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83DCFD561CE1CC1E004F5502 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83DCFD581CE1CC1E004F5502 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83DCFD601CE1D47B004F5502 /* FeedsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsTableViewController.swift; sourceTree = "<group>"; };
 		83DCFDA01CE1E24E004F5502 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		83DCFDBB1CE20910004F5502 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		83DCFDBC1CE20910004F5502 /* PagingMenuController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PagingMenuController.framework; path = Carthage/Build/iOS/PagingMenuController.framework; sourceTree = "<group>"; };
 		83DCFDBD1CE20910004F5502 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		83DCFDBE1CE20910004F5502 /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
-		83DCFDC31CE20D3F004F5502 /* FeedsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsData.swift; sourceTree = "<group>"; };
 		83DCFDC61CE22789004F5502 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		83DCFDC81CE22DF0004F5502 /* FeedsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,10 +192,10 @@
 			children = (
 				83DCFD491CE1CC1E004F5502 /* AppDelegate.swift */,
 				83DCFD4D1CE1CC1E004F5502 /* Main.storyboard */,
-				83DCFDC31CE20D3F004F5502 /* FeedsData.swift */,
+				83145E331CE33F3D00F0679D /* CategoryData.swift */,
 				83145E2C1CE3017700F0679D /* MainViewController.swift */,
 				83DCFDC81CE22DF0004F5502 /* FeedsService.swift */,
-				83DCFD601CE1D47B004F5502 /* FeedsTableViewController.swift */,
+				83145E311CE3388E00F0679D /* FeedsViewController.swift */,
 				83DCFDA01CE1E24E004F5502 /* FeedTableViewCell.swift */,
 				83DCFDC61CE22789004F5502 /* WebViewController.swift */,
 				83DCFD531CE1CC1E004F5502 /* Assets.xcassets */,
@@ -310,8 +310,8 @@
 				83DCFD521CE1CC1E004F5502 /* Menthas.xcdatamodeld in Sources */,
 				8347E16A1CE23CAA008F679D /* Misc.swift in Sources */,
 				8347E1681CE23CAA008F679D /* LoadingView.swift in Sources */,
-				83DCFDC41CE20D3F004F5502 /* FeedsData.swift in Sources */,
 				83DCFDC91CE22DF0004F5502 /* FeedsService.swift in Sources */,
+				83145E341CE33F3D00F0679D /* CategoryData.swift in Sources */,
 				8347E1731CE23CAA008F679D /* SpringView.swift in Sources */,
 				8347E15D1CE23CAA008F679D /* BlurView.swift in Sources */,
 				8347E1641CE23CAA008F679D /* DesignableView.swift in Sources */,
@@ -321,7 +321,7 @@
 				8347E16B1CE23CAA008F679D /* SoundPlayer.swift in Sources */,
 				8347E1651CE23CAA008F679D /* ImageLoader.swift in Sources */,
 				8347E15C1CE23CAA008F679D /* AutoTextView.swift in Sources */,
-				83DCFD611CE1D47B004F5502 /* FeedsTableViewController.swift in Sources */,
+				83145E321CE3388E00F0679D /* FeedsViewController.swift in Sources */,
 				83145E2F1CE322CB00F0679D /* HExtentions.swift in Sources */,
 				8347E1761CE23CAA008F679D /* UnwindSegue.swift in Sources */,
 				8347E15B1CE23CAA008F679D /* AsyncImageView.swift in Sources */,

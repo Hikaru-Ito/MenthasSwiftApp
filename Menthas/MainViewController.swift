@@ -14,37 +14,6 @@ class MainViewController: UIViewController, PagingMenuControllerDelegate {
     var BaseBGColor: UIColor = UIColor.hexStr("273646", alpha: 1)
     
     var viewControllers: [UIViewController] = []
-
-    var categories: [Dictionary<String, String>] = [
-        [
-            "identifier": "top",
-            "name": "Top"
-        ],
-        [
-            "identifier": "javascript",
-            "name": "JavaScript"
-        ],
-        [
-            "identifier": "php",
-            "name": "PHP"
-        ],
-        [
-            "identifier": "java",
-            "name": "Java"
-        ],
-        [
-            "identifier": "ruby",
-            "name": "Ruby"
-        ],
-        [
-            "identifier": "python",
-            "name": "Python"
-        ],
-        [
-            "identifier": "objective-c",
-            "name": "Objective-C"
-        ]
-    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +28,7 @@ class MainViewController: UIViewController, PagingMenuControllerDelegate {
         
         // MARK: Configure SwipeTabUI
         for category in categories {
-            let feedsTableViewController = self.storyboard?.instantiateViewControllerWithIdentifier("FeedsTableViewController") as! FeedsTableViewController
+            let feedsTableViewController = self.storyboard?.instantiateViewControllerWithIdentifier("FeedsViewController") as! FeedsViewController
             feedsTableViewController.title = category["name"]
             feedsTableViewController.categoryIdentifier = category["identifier"]
             
@@ -100,6 +69,21 @@ class MainViewController: UIViewController, PagingMenuControllerDelegate {
     }
     
     func didMoveToPageMenuController(menuController: UIViewController, previousMenuController: UIViewController) {
+        // Tapping StatusBar to Scroll Top Function
+        if let pagingMenuController = self.childViewControllers.first as? PagingMenuController {
+            for controller in pagingMenuController.visiblePagingViewControllers {
+                for subview in controller.view.subviews {
+                    if let scrollView = subview as? UIScrollView {
+                        scrollView.scrollsToTop = false
+                    }
+                }
+            }
+            for subview in menuController.view.subviews {
+                if let scrollView = subview as? UIScrollView {
+                    scrollView.scrollsToTop = true
+                }
+            }
+        }
     }
 
 }
