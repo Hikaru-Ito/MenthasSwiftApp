@@ -11,6 +11,7 @@
 		83145E2F1CE322CB00F0679D /* HExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E2E1CE322CB00F0679D /* HExtentions.swift */; };
 		83145E321CE3388E00F0679D /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E311CE3388E00F0679D /* FeedsViewController.swift */; };
 		83145E341CE33F3D00F0679D /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E331CE33F3D00F0679D /* CategoryData.swift */; };
+		83145E361CE3468900F0679D /* BusyNavigationBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83145E351CE3468900F0679D /* BusyNavigationBar.framework */; };
 		8347E15A1CE23CAA008F679D /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347E13C1CE23CAA008F679D /* AsyncButton.swift */; };
 		8347E15B1CE23CAA008F679D /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347E13D1CE23CAA008F679D /* AsyncImageView.swift */; };
 		8347E15C1CE23CAA008F679D /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347E13E1CE23CAA008F679D /* AutoTextView.swift */; };
@@ -59,6 +60,7 @@
 		83145E2E1CE322CB00F0679D /* HExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HExtentions.swift; sourceTree = "<group>"; };
 		83145E311CE3388E00F0679D /* FeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		83145E331CE33F3D00F0679D /* CategoryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
+		83145E351CE3468900F0679D /* BusyNavigationBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BusyNavigationBar.framework; path = Carthage/Build/iOS/BusyNavigationBar.framework; sourceTree = "<group>"; };
 		8347E13C1CE23CAA008F679D /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		8347E13D1CE23CAA008F679D /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		8347E13E1CE23CAA008F679D /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83145E361CE3468900F0679D /* BusyNavigationBar.framework in Frameworks */,
 				83DCFDBF1CE20910004F5502 /* Alamofire.framework in Frameworks */,
 				83DCFDC01CE20910004F5502 /* PagingMenuController.framework in Frameworks */,
 				83DCFDC11CE20910004F5502 /* SwiftyJSON.framework in Frameworks */,
@@ -169,6 +172,7 @@
 		83DCFD3D1CE1CC1E004F5502 = {
 			isa = PBXGroup;
 			children = (
+				83145E351CE3468900F0679D /* BusyNavigationBar.framework */,
 				83DCFDBB1CE20910004F5502 /* Alamofire.framework */,
 				83DCFDBC1CE20910004F5502 /* PagingMenuController.framework */,
 				83DCFDBD1CE20910004F5502 /* SwiftyJSON.framework */,
@@ -287,6 +291,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/PagingMenuController.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WebImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BusyNavigationBar.framework",
 			);
 			outputPaths = (
 			);
