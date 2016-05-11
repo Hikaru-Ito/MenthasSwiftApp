@@ -12,18 +12,24 @@ import SwiftyJSON
 class FeedsTableViewController: UITableViewController {
 
     var feeds: JSON! = []
+    var categoryName: String! = ""
+    var categoryIdentifier: String! = ""
         
     func loadFeeds(category: String, offset: Int) {
         FeedsService.feedsList(category, offset: offset) { (JSON) -> () in
             self.feeds = JSON["items"]
             self.tableView.reloadData()
+            self.refreshControl?.endRefreshing()
         }
+    }
+    func refreshFeeds() {
+        loadFeeds(categoryIdentifier, offset: 0)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loadFeeds("top", offset: 0)
+        loadFeeds(categoryIdentifier, offset: 0)
     }
     
     // MARK: TableView Configure

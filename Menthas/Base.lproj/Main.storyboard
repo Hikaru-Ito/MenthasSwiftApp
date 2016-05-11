@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="g9o-7n-zEB">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
@@ -21,33 +20,93 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vam-OA-scC" kind="relationship" relationship="rootViewController" id="W8z-SD-Hy0"/>
+                        <segue destination="NJM-tW-S3U" kind="relationship" relationship="rootViewController" id="4Zt-vt-0eG"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IFJ-PM-XDU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="620.5" y="389.5"/>
         </scene>
+        <!--Main View Controller-->
+        <scene sceneID="85G-LU-l2L">
+            <objects>
+                <viewController id="NJM-tW-S3U" customClass="MainViewController" customModule="Menthas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DgM-vZ-H91"/>
+                        <viewControllerLayoutGuide type="bottom" id="lOo-PJ-qKp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wZn-bL-SJs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ten-WF-Xy5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <connections>
+                                    <segue destination="5TZ-ek-mRp" kind="embed" id="k4E-v9-aho"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ten-WF-Xy5" secondAttribute="trailing" id="1tm-Y8-rkm"/>
+                            <constraint firstItem="lOo-PJ-qKp" firstAttribute="top" secondItem="Ten-WF-Xy5" secondAttribute="bottom" id="d0W-N4-89k"/>
+                            <constraint firstItem="Ten-WF-Xy5" firstAttribute="top" secondItem="DgM-vZ-H91" secondAttribute="bottom" id="ikb-50-cPx"/>
+                            <constraint firstItem="Ten-WF-Xy5" firstAttribute="leading" secondItem="wZn-bL-SJs" secondAttribute="leading" id="rrQ-Wi-fZ8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9mh-Rg-Ph9"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AJk-5C-t7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="620.5" y="1208.5"/>
+        </scene>
+        <!--Paging Menu Controller-->
+        <scene sceneID="8xU-nJ-8e8">
+            <objects>
+                <viewController id="5TZ-ek-mRp" customClass="PagingMenuController" customModule="PagingMenuController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b1u-qm-Adq"/>
+                        <viewControllerLayoutGuide type="bottom" id="oWv-Tl-9ND"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vuN-OV-4o5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y2s-3B-Suf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1082.5" y="1208.5"/>
+        </scene>
         <!--FeedList-->
         <scene sceneID="18H-ks-YUO">
             <objects>
-                <tableViewController id="vam-OA-scC" customClass="FeedsTableViewController" customModule="Menthas" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="FeedsTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vam-OA-scC" customClass="FeedsTableViewController" customModule="Menthas" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" sectionHeaderHeight="28" sectionFooterHeight="28" id="qU2-rJ-H0c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedCell" rowHeight="96" id="Yc9-O7-dDL" customClass="FeedTableViewCell" customModule="Menthas" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="96"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="96"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yc9-O7-dDL" id="cVM-8q-nmx">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed Article Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHz-gT-X9R">
-                                            <rect key="frame" x="108" y="8" width="255" height="18"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHz-gT-X9R">
+                                            <rect key="frame" x="108" y="8" width="255" height="17"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Feed Article Title">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.011764705882352941" green="0.011764705882352941" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="16" name="HiraginoSans-W4"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="15" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xId-W1-iDi">
@@ -162,4 +221,5 @@
             <point key="canvasLocation" x="1569.5" y="389.5"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

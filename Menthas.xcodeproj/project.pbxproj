@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83145E2D1CE3017700F0679D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E2C1CE3017700F0679D /* MainViewController.swift */; };
+		83145E2F1CE322CB00F0679D /* HExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E2E1CE322CB00F0679D /* HExtentions.swift */; };
 		8347E15A1CE23CAA008F679D /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347E13C1CE23CAA008F679D /* AsyncButton.swift */; };
 		8347E15B1CE23CAA008F679D /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347E13D1CE23CAA008F679D /* AsyncImageView.swift */; };
 		8347E15C1CE23CAA008F679D /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8347E13E1CE23CAA008F679D /* AutoTextView.swift */; };
@@ -53,6 +55,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83145E2C1CE3017700F0679D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		83145E2E1CE322CB00F0679D /* HExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HExtentions.swift; sourceTree = "<group>"; };
 		8347E13C1CE23CAA008F679D /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		8347E13D1CE23CAA008F679D /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		8347E13E1CE23CAA008F679D /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				8347E13B1CE23CAA008F679D /* Spring */,
+				83145E2E1CE322CB00F0679D /* HExtentions.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 				83DCFD491CE1CC1E004F5502 /* AppDelegate.swift */,
 				83DCFD4D1CE1CC1E004F5502 /* Main.storyboard */,
 				83DCFDC31CE20D3F004F5502 /* FeedsData.swift */,
+				83145E2C1CE3017700F0679D /* MainViewController.swift */,
 				83DCFDC81CE22DF0004F5502 /* FeedsService.swift */,
 				83DCFD601CE1D47B004F5502 /* FeedsTableViewController.swift */,
 				83DCFDA01CE1E24E004F5502 /* FeedTableViewCell.swift */,
@@ -309,12 +315,14 @@
 				8347E1731CE23CAA008F679D /* SpringView.swift in Sources */,
 				8347E15D1CE23CAA008F679D /* BlurView.swift in Sources */,
 				8347E1641CE23CAA008F679D /* DesignableView.swift in Sources */,
+				83145E2D1CE3017700F0679D /* MainViewController.swift in Sources */,
 				8347E1721CE23CAA008F679D /* SpringTextView.swift in Sources */,
 				8347E1711CE23CAA008F679D /* SpringTextField.swift in Sources */,
 				8347E16B1CE23CAA008F679D /* SoundPlayer.swift in Sources */,
 				8347E1651CE23CAA008F679D /* ImageLoader.swift in Sources */,
 				8347E15C1CE23CAA008F679D /* AutoTextView.swift in Sources */,
 				83DCFD611CE1D47B004F5502 /* FeedsTableViewController.swift in Sources */,
+				83145E2F1CE322CB00F0679D /* HExtentions.swift in Sources */,
 				8347E1761CE23CAA008F679D /* UnwindSegue.swift in Sources */,
 				8347E15B1CE23CAA008F679D /* AsyncImageView.swift in Sources */,
 				8347E16D1CE23CAA008F679D /* SpringAnimation.swift in Sources */,
