@@ -13,12 +13,13 @@ class WebViewController: UIViewController {
     @IBOutlet weak var webView: UIWebView!
 
     var url: String!
+    var titie: String!
     
     override func viewDidLoad() {
+        self.titie = title
         let targetURL = NSURL(string: url)
         let req = NSURLRequest(URL: targetURL!)
         webView.loadRequest(req)
-        
     }
     
     deinit {

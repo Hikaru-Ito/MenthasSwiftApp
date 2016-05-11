@@ -14,8 +14,8 @@ class FeedsViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet weak var tableView: UITableView!
     
     var feeds: JSON! = []
-    var categoryName: String! = "Top"
-    var categoryIdentifier: String! = "top"
+    var categoryName: String! = ""
+    var categoryIdentifier: String! = ""
     var refreshControl:UIRefreshControl!
     
     func loadFeeds(category: String, offset: Int) {
@@ -63,7 +63,9 @@ class FeedsViewController: UIViewController, UITableViewDataSource, UITableViewD
             let toView = segue.destinationViewController as! WebViewController
             let indexPath = sender as! NSIndexPath
             let url = feeds[indexPath.row]["page"]["url"].string ?? ""
+            let title = feeds[indexPath.row]["page"]["title"].string ?? ""
             toView.url = url
+            toView.title = title
         }
     }
 }
