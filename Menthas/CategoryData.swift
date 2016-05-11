@@ -36,5 +36,53 @@ var categories: [Dictionary<String, String>] = [
     [
         "identifier": "objective-c",
         "name": "Objective-C"
+    ],
+    [
+        "identifier": "objective-c",
+        "name": "Objective-C"
+    ],
+    [
+        "identifier": "programming",
+        "name": "プログラミング"
+    ],
+    [
+        "identifier": "design",
+        "name": "デザイン"
+    ],
+    [
+        "identifier": "android",
+        "name": "Android"
+    ],
+    [
+        "identifier": "ios",
+        "name": "iOS"
+    ],
+    [
+        "identifier": "windows",
+        "name": "Windows"
+    ],
+    [
+        "identifier": "machine-learning",
+        "name": "機械学習"
+    ],
+    [
+        "identifier": "gadget",
+        "name": "ガジェット"
+    ],
+    [
+        "identifier": "social",
+        "name": "ソーシャル"
+    ],
+    [
+        "identifier": "security",
+        "name": "セキュリティ"
+    ],
+    [
+        "identifier": "infrastructure",
+        "name": "インフラ"
+    ],
+    [
+        "identifier": "iot",
+        "name": "IoT"
     ]
 ]

@@ -43,7 +43,8 @@ class MainViewController: UIViewController, PagingMenuControllerDelegate {
         options.selectedBackgroundColor = BaseBGColor
         options.textColor = UIColor.hexStr("7f8c8d", alpha: 1)
         options.selectedTextColor = UIColor.hexStr("ffffff", alpha: 1)
-        options.menuDisplayMode = .Infinite(widthMode: .Flexible, scrollingMode: .ScrollEnabled)
+        //options.menuDisplayMode = .Standard(widthMode: .Flexible, centerItem: true, scrollingMode: .PagingEnabled)
+        options.menuDisplayMode = .Infinite(widthMode: .Flexible, scrollingMode: .ScrollEnabledAndBouces)
         options.menuItemMode = .Underline(height: 3, color: UIColor.whiteColor(), horizontalPadding: 12, verticalPadding: 10)
         
         let pagingMenuController = self.childViewControllers.first as! PagingMenuController
