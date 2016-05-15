@@ -38,10 +38,6 @@ var categories: [Dictionary<String, String>] = [
         "name": "Objective-C"
     ],
     [
-        "identifier": "objective-c",
-        "name": "Objective-C"
-    ],
-    [
         "identifier": "programming",
         "name": "プログラミング"
     ],

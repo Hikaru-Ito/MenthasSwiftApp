@@ -9,6 +9,11 @@
 import UIKit
 import PagingMenuController
 
+struct ViewManager {
+    static var navigationBarHeight: CGFloat! = 44
+    static let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.size.height
+}
+
 class MainViewController: UIViewController, PagingMenuControllerDelegate {
     
     var BaseBGColor: UIColor = UIColor.hexStr("273646", alpha: 1)
@@ -20,6 +25,9 @@ class MainViewController: UIViewController, PagingMenuControllerDelegate {
 
         // NavigationBar Hidden
         navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        // Set NavigationBar Height to ManagaerStruct
+        ViewManager.navigationBarHeight = navigationController?.navigationBar.frame.size.height
         
         // StatusBar Background
         let statusBar = UIView(frame:CGRect(x: 0.0, y: 0.0, width: UIScreen.mainScreen().bounds.size.width, height: 20.0))

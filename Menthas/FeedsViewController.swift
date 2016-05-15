@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import TabPageViewController
 
 class FeedsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -38,6 +39,14 @@ class FeedsViewController: UIViewController, UITableViewDataSource, UITableViewD
         refreshControl.addTarget(self, action: #selector(FeedsViewController.refreshFeeds), forControlEvents: UIControlEvents.ValueChanged)
         tableView.addSubview(refreshControl)
         
+        // Set ContentOffset
+        let edgeInsets = ViewManager.navigationBarHeight + ViewManager.statusBarHeight + TabPageOption().tabHeight
+        tableView.contentInset.top = edgeInsets
+        tableView.scrollIndicatorInsets.top = edgeInsets
+        
+        // Dismiss BackButton Texts
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+        
         loadFeeds(categoryIdentifier, offset: 0)
     }
 
@@ -54,11 +63,16 @@ class FeedsViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("WebSegue", sender: indexPath)
+        performSegueWithIdentifier("EntryPageSegue", sender: indexPath)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "EntryPageSegue" {
+            let toView = segue.destinationViewController as! PageScrollViewController
+            let indexPath = sender as! NSIndexPath
+            toView.entry = feeds[indexPath.row]
+        }
         if segue.identifier == "WebSegue" {
             let toView = segue.destinationViewController as! WebViewController
             let indexPath = sender as! NSIndexPath
