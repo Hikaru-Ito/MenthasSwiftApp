@@ -1,6 +1,4 @@
 github "Alamofire/Alamofire"
 github "SwiftyJSON/SwiftyJSON"
 github "rs/SDWebImage"
-github "kitasuke/PagingMenuController"
-github "gmertk/BusyNavigationBar" "master"
 github "EndouMari/TabPageViewController"
