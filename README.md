@@ -1,6 +1,6 @@
 # Menthas Swift App
 
-![logo](http://menthas.com/images/logo.svg)
+![logo](https://gyazo.com/37e310ff2764645fa4603545e4000bc8.png)
 
 ## OverView
 
