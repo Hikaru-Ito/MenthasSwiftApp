@@ -73,13 +73,13 @@ class FeedsViewController: UIViewController, UITableViewDataSource, UITableViewD
             let indexPath = sender as! NSIndexPath
             toView.entry = feeds[indexPath.row]
         }
-        if segue.identifier == "WebSegue" {
-            let toView = segue.destinationViewController as! WebViewController
-            let indexPath = sender as! NSIndexPath
-            let url = feeds[indexPath.row]["page"]["url"].string ?? ""
-            let title = feeds[indexPath.row]["page"]["title"].string ?? ""
-            toView.url = url
-            toView.title = title
-        }
+//        if segue.identifier == "WebSegue" {
+//            let toView = segue.destinationViewController as! WebViewController
+//            let indexPath = sender as! NSIndexPath
+//            let url = feeds[indexPath.row]["page"]["url"].string ?? ""
+//            let title = feeds[indexPath.row]["page"]["title"].string ?? ""
+//            toView.url = url
+//            toView.title = title
+//        }
     }
 }

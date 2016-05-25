@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		83145E2D1CE3017700F0679D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E2C1CE3017700F0679D /* MainViewController.swift */; };
+		83145E2D1CE3017700F0679D /* sampleMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E2C1CE3017700F0679D /* sampleMainViewController.swift */; };
 		83145E2F1CE322CB00F0679D /* HExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E2E1CE322CB00F0679D /* HExtentions.swift */; };
 		83145E321CE3388E00F0679D /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E311CE3388E00F0679D /* FeedsViewController.swift */; };
 		83145E341CE33F3D00F0679D /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E331CE33F3D00F0679D /* CategoryData.swift */; };
 		83145E361CE3468900F0679D /* BusyNavigationBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83145E351CE3468900F0679D /* BusyNavigationBar.framework */; };
-		83145E3C1CE4647D00F0679D /* PageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E3B1CE4647D00F0679D /* PageCollectionViewController.swift */; };
 		83145E3E1CE468FF00F0679D /* SegmentContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E3D1CE468FF00F0679D /* SegmentContentViewController.swift */; };
 		83145E401CE4693B00F0679D /* SegmentWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E3F1CE4693B00F0679D /* SegmentWebViewController.swift */; };
 		83145E821CE4C6A500F0679D /* PageScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83145E811CE4C6A500F0679D /* PageScrollViewController.swift */; };
@@ -57,17 +56,17 @@
 		83DCFDC21CE20910004F5502 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83DCFDBE1CE20910004F5502 /* WebImage.framework */; };
 		83DCFDC71CE22789004F5502 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DCFDC61CE22789004F5502 /* WebViewController.swift */; };
 		83DCFDC91CE22DF0004F5502 /* FeedsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DCFDC81CE22DF0004F5502 /* FeedsService.swift */; };
-		83E0CF421CE7766B00D15D4F /* Main2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0CF411CE7766B00D15D4F /* Main2ViewController.swift */; };
+		83E0CF421CE7766B00D15D4F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0CF411CE7766B00D15D4F /* MainViewController.swift */; };
 		83E0CF441CE776B000D15D4F /* TabPageViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0CF431CE776B000D15D4F /* TabPageViewController.framework */; };
+		83E0CF461CE8896A00D15D4F /* Main3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E0CF451CE8896A00D15D4F /* Main3ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		83145E2C1CE3017700F0679D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		83145E2C1CE3017700F0679D /* sampleMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sampleMainViewController.swift; sourceTree = "<group>"; };
 		83145E2E1CE322CB00F0679D /* HExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HExtentions.swift; sourceTree = "<group>"; };
 		83145E311CE3388E00F0679D /* FeedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		83145E331CE33F3D00F0679D /* CategoryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
 		83145E351CE3468900F0679D /* BusyNavigationBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BusyNavigationBar.framework; path = Carthage/Build/iOS/BusyNavigationBar.framework; sourceTree = "<group>"; };
-		83145E3B1CE4647D00F0679D /* PageCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageCollectionViewController.swift; sourceTree = "<group>"; };
 		83145E3D1CE468FF00F0679D /* SegmentContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentContentViewController.swift; sourceTree = "<group>"; };
 		83145E3F1CE4693B00F0679D /* SegmentWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentWebViewController.swift; sourceTree = "<group>"; };
 		83145E811CE4C6A500F0679D /* PageScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageScrollViewController.swift; sourceTree = "<group>"; };
@@ -115,8 +114,9 @@
 		83DCFDBE1CE20910004F5502 /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
 		83DCFDC61CE22789004F5502 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		83DCFDC81CE22DF0004F5502 /* FeedsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedsService.swift; sourceTree = "<group>"; };
-		83E0CF411CE7766B00D15D4F /* Main2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main2ViewController.swift; sourceTree = "<group>"; };
+		83E0CF411CE7766B00D15D4F /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		83E0CF431CE776B000D15D4F /* TabPageViewController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TabPageViewController.framework; path = Carthage/Build/iOS/TabPageViewController.framework; sourceTree = "<group>"; };
+		83E0CF451CE8896A00D15D4F /* Main3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main3ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +182,16 @@
 			path = Spring;
 			sourceTree = "<group>";
 		};
+		83C7A4161CF57F5000341647 /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				83E0CF451CE8896A00D15D4F /* Main3ViewController.swift */,
+				83145E2C1CE3017700F0679D /* sampleMainViewController.swift */,
+				83DCFDC61CE22789004F5502 /* WebViewController.swift */,
+			);
+			name = sample;
+			sourceTree = "<group>";
+		};
 		83DCFD3D1CE1CC1E004F5502 = {
 			isa = PBXGroup;
 			children = (
@@ -211,16 +221,14 @@
 				83DCFD491CE1CC1E004F5502 /* AppDelegate.swift */,
 				83DCFD4D1CE1CC1E004F5502 /* Main.storyboard */,
 				83145E811CE4C6A500F0679D /* PageScrollViewController.swift */,
-				83E0CF411CE7766B00D15D4F /* Main2ViewController.swift */,
-				83145E3B1CE4647D00F0679D /* PageCollectionViewController.swift */,
+				83E0CF411CE7766B00D15D4F /* MainViewController.swift */,
 				83145E3F1CE4693B00F0679D /* SegmentWebViewController.swift */,
 				83145E3D1CE468FF00F0679D /* SegmentContentViewController.swift */,
 				83145E331CE33F3D00F0679D /* CategoryData.swift */,
-				83145E2C1CE3017700F0679D /* MainViewController.swift */,
+				83C7A4161CF57F5000341647 /* sample */,
 				83DCFDC81CE22DF0004F5502 /* FeedsService.swift */,
 				83145E311CE3388E00F0679D /* FeedsViewController.swift */,
 				83DCFDA01CE1E24E004F5502 /* FeedTableViewCell.swift */,
-				83DCFDC61CE22789004F5502 /* WebViewController.swift */,
 				83DCFD531CE1CC1E004F5502 /* Assets.xcassets */,
 				83DCFD551CE1CC1E004F5502 /* LaunchScreen.storyboard */,
 				83DCFD581CE1CC1E004F5502 /* Info.plist */,
@@ -333,6 +341,7 @@
 				83DCFDC71CE22789004F5502 /* WebViewController.swift in Sources */,
 				8347E1631CE23CAA008F679D /* DesignableTextView.swift in Sources */,
 				83DCFD521CE1CC1E004F5502 /* Menthas.xcdatamodeld in Sources */,
+				83E0CF461CE8896A00D15D4F /* Main3ViewController.swift in Sources */,
 				8347E16A1CE23CAA008F679D /* Misc.swift in Sources */,
 				8347E1681CE23CAA008F679D /* LoadingView.swift in Sources */,
 				83DCFDC91CE22DF0004F5502 /* FeedsService.swift in Sources */,
@@ -340,7 +349,7 @@
 				8347E1731CE23CAA008F679D /* SpringView.swift in Sources */,
 				8347E15D1CE23CAA008F679D /* BlurView.swift in Sources */,
 				8347E1641CE23CAA008F679D /* DesignableView.swift in Sources */,
-				83145E2D1CE3017700F0679D /* MainViewController.swift in Sources */,
+				83145E2D1CE3017700F0679D /* sampleMainViewController.swift in Sources */,
 				83145E401CE4693B00F0679D /* SegmentWebViewController.swift in Sources */,
 				8347E1721CE23CAA008F679D /* SpringTextView.swift in Sources */,
 				8347E1711CE23CAA008F679D /* SpringTextField.swift in Sources */,
@@ -348,11 +357,10 @@
 				8347E1651CE23CAA008F679D /* ImageLoader.swift in Sources */,
 				83145E821CE4C6A500F0679D /* PageScrollViewController.swift in Sources */,
 				8347E15C1CE23CAA008F679D /* AutoTextView.swift in Sources */,
-				83145E3C1CE4647D00F0679D /* PageCollectionViewController.swift in Sources */,
 				83145E321CE3388E00F0679D /* FeedsViewController.swift in Sources */,
 				83145E2F1CE322CB00F0679D /* HExtentions.swift in Sources */,
 				8347E1761CE23CAA008F679D /* UnwindSegue.swift in Sources */,
-				83E0CF421CE7766B00D15D4F /* Main2ViewController.swift in Sources */,
+				83E0CF421CE7766B00D15D4F /* MainViewController.swift in Sources */,
 				8347E15B1CE23CAA008F679D /* AsyncImageView.swift in Sources */,
 				8347E16D1CE23CAA008F679D /* SpringAnimation.swift in Sources */,
 				8347E1671CE23CAA008F679D /* KeyboardLayoutConstraint.swift in Sources */,

@@ -29,5 +29,20 @@ struct FeedsService {
             cb(json)
         }
     }
+    
+    static func articleContent(url: String, cb: (JSON) -> Void) -> Void {
+        let urlStr:String = "https://menthas-app-backend.herokuapp.com/api/entryText"
+        let params = [
+            "url": url
+        ]
+        Alamofire.request(.GET, urlStr, parameters: params).responseJSON { response in
+            guard let obj = response.result.value else {
+                return
+            }
+            let json = JSON(obj)
+            
+            cb(json)
+        }
+    }
 }
 

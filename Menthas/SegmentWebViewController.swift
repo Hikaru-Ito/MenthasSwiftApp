@@ -43,6 +43,9 @@ class SegmentWebViewController: UIViewController, UIWebViewDelegate {
         webView.loadHTMLString("", baseURL: nil)
         webView.delegate = nil
         stopLoading()
+        webView.removeFromSuperview()
+        self.removeFromParentViewController()
+        
         print("Web View deinit")
     }
     

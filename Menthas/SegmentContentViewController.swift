@@ -20,7 +20,12 @@ class SegmentContentViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var topImageView: UIImageView!
     
-    var entry:JSON! = []
+    var entry:JSON! = [] {
+        didSet {
+            self.setContent()
+            self.loadEntryContent()
+        }
+    }
     
     @IBAction func pushButtonTouched(sender: AnyObject) {
         let url = entry["page"]["url"].string ?? ""
@@ -39,23 +44,9 @@ class SegmentContentViewController: UIViewController, UIScrollViewDelegate {
     }
     
     override func viewWillAppear(animated: Bool) {
-        setContent()
+
     }
     
-    override func viewDidLayoutSubviews() {
-        
-        //setContent()
-        
-//        let htmlText = "<img src=\"http://blogmobility.pl/wp-content/uploads/2016/04/apple.png\" width=\"100px\">こんにちは<h2>ヘッダー</h2><style>h2 {color:red;border:1px solid #aaa;background:#ddd;}<style>"
-//        let htmlData = htmlText.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion:true)!
-//        do {
-//            let attributedText = try NSAttributedString(data: htmlData, options: [NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType, NSCharacterEncodingDocumentAttribute:NSUTF8StringEncoding], documentAttributes: nil)
-//            textView.attributedText = attributedText
-//        } catch {
-//            print(error)
-//        }
-        //textView.text = longText
-    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -65,6 +56,24 @@ class SegmentContentViewController: UIViewController, UIScrollViewDelegate {
         print("Content deinit")
     }
 
+    func loadEntryContent() {
+        FeedsService.articleContent(entry["page"]["url"].string ?? "") { (JSON) -> () in
+            print(JSON["content"].string ?? "")
+            self.setArticleContent(JSON["content"].string ?? "")
+        }
+    }
+    
+    func setArticleContent(htmlStr: String) {
+        do {
+            let htmlData = htmlStr.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion:true)!
+            let attributedText = try NSAttributedString(data: htmlData, options: [NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType, NSCharacterEncodingDocumentAttribute:NSUTF8StringEncoding], documentAttributes: nil)
+            textView.attributedText = attributedText
+        } catch {
+            print(error)
+        }
+        let size = textView.sizeThatFits(textView.frame.size)
+        textView.frame.size.height = size.height
+    }
     
     func setContent() {
         topImageView.sd_setImageWithURL(NSURL(string: entry["page"]["thumbnail"].string ?? ""))

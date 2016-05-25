@@ -20,193 +20,28 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="cGp-Nw-Qj2" kind="relationship" relationship="rootViewController" id="D6g-9Y-6bd"/>
+                        <segue destination="cGp-Nw-Qj2" kind="relationship" relationship="rootViewController" id="Jza-cJ-zwa"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IFJ-PM-XDU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="620.5" y="389.5"/>
+            <point key="canvasLocation" x="-191.5" y="405.5"/>
         </scene>
-        <!--Main View Controller-->
-        <scene sceneID="85G-LU-l2L">
+        <!--Main3 View Controller-->
+        <scene sceneID="Qlm-yE-JaV">
             <objects>
-                <viewController id="NJM-tW-S3U" customClass="MainViewController" customModule="Menthas" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DgM-vZ-H91"/>
-                        <viewControllerLayoutGuide type="bottom" id="lOo-PJ-qKp"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wZn-bL-SJs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ten-WF-Xy5">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <connections>
-                                    <segue destination="5TZ-ek-mRp" kind="embed" id="k4E-v9-aho"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Ten-WF-Xy5" secondAttribute="trailing" id="1tm-Y8-rkm"/>
-                            <constraint firstItem="lOo-PJ-qKp" firstAttribute="top" secondItem="Ten-WF-Xy5" secondAttribute="bottom" id="d0W-N4-89k"/>
-                            <constraint firstItem="Ten-WF-Xy5" firstAttribute="top" secondItem="DgM-vZ-H91" secondAttribute="bottom" id="ikb-50-cPx"/>
-                            <constraint firstItem="Ten-WF-Xy5" firstAttribute="leading" secondItem="wZn-bL-SJs" secondAttribute="leading" id="rrQ-Wi-fZ8"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="9mh-Rg-Ph9"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="h5k-jP-8fs" customClass="Main3ViewController" customModule="Menthas" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ook-sO-48f"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AJk-5C-t7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eMA-pP-yyx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="620.5" y="1208.5"/>
-        </scene>
-        <!--Paging Menu Controller-->
-        <scene sceneID="8xU-nJ-8e8">
-            <objects>
-                <viewController id="5TZ-ek-mRp" customClass="PagingMenuController" customModule="PagingMenuController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="b1u-qm-Adq"/>
-                        <viewControllerLayoutGuide type="bottom" id="oWv-Tl-9ND"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vuN-OV-4o5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y2s-3B-Suf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1082.5" y="1208.5"/>
-        </scene>
-        <!--Web View Controller-->
-        <scene sceneID="91e-ud-c5r">
-            <objects>
-                <viewController id="VJH-6k-McR" customClass="WebViewController" customModule="Menthas" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7Ih-lq-jvq"/>
-                        <viewControllerLayoutGuide type="bottom" id="pjg-YU-1t8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2Qn-Xf-fkB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0z-Tu-ADo">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtj-xw-mUs" customClass="DesignableButton" customModule="Menthas" customModuleProvider="target">
-                                <rect key="frame" x="16" y="607" width="120" height="44"/>
-                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="WSW-N4-Vcp"/>
-                                    <constraint firstAttribute="height" constant="44" id="aFh-9p-8Vw"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                <state key="normal" title="Touch me?">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideUp"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                        <real key="value" value="0.10000000000000001"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Dtj-xw-mUs" firstAttribute="leading" secondItem="2Qn-Xf-fkB" secondAttribute="leading" constant="16" id="8aZ-tg-dWf"/>
-                            <constraint firstItem="pjg-YU-1t8" firstAttribute="top" secondItem="A0z-Tu-ADo" secondAttribute="bottom" id="FFC-2F-gfJ"/>
-                            <constraint firstItem="pjg-YU-1t8" firstAttribute="top" secondItem="Dtj-xw-mUs" secondAttribute="bottom" constant="16" id="SrO-Rc-wmd"/>
-                            <constraint firstItem="A0z-Tu-ADo" firstAttribute="top" secondItem="2Qn-Xf-fkB" secondAttribute="top" id="VDi-fJ-yKH"/>
-                            <constraint firstItem="A0z-Tu-ADo" firstAttribute="leading" secondItem="2Qn-Xf-fkB" secondAttribute="leading" id="ef8-wo-gKd"/>
-                            <constraint firstItem="Dtj-xw-mUs" firstAttribute="leading" secondItem="2Qn-Xf-fkB" secondAttribute="leading" constant="16" id="gIj-3E-cQx"/>
-                            <constraint firstItem="pjg-YU-1t8" firstAttribute="top" secondItem="Dtj-xw-mUs" secondAttribute="bottom" constant="16" id="rPo-hO-t5q"/>
-                            <constraint firstAttribute="trailing" secondItem="A0z-Tu-ADo" secondAttribute="trailing" id="z0G-7c-JHT"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="webView" destination="A0z-Tu-ADo" id="keW-Bm-9JL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0YI-CL-x73" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1569.5" y="389.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ykY-xr-BlK">
-            <objects>
-                <viewController id="F0w-oq-uXT" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="18i-xL-Ade"/>
-                        <viewControllerLayoutGuide type="bottom" id="egh-VP-GGT"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rqR-Rl-xc5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnF-v1-qbz" customClass="DesignableButton" customModule="Menthas" customModuleProvider="target">
-                                <rect key="frame" x="127" y="314" width="120" height="40"/>
-                                <state key="normal" title="CollectionView">
-                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.80000000000000004"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="fv4-kb-LAb" kind="show" id="urb-0F-1e1"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2I-JI-rF8" customClass="DesignableButton" customModule="Menthas" customModuleProvider="target">
-                                <rect key="frame" x="127" y="385" width="120" height="40"/>
-                                <state key="normal" title="ScrollView">
-                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.80000000000000004"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="fUi-t8-DqN" kind="show" id="Dfi-ZW-YRg"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ECg-AR-7jp"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LVQ-D8-Why" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="588.5" y="-375.5"/>
+            <point key="canvasLocation" x="375.5" y="1177.5"/>
         </scene>
         <!--Menthas-->
         <scene sceneID="ZG0-WB-0mf">
             <objects>
-                <viewController id="cGp-Nw-Qj2" customClass="Main2ViewController" customModule="Menthas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cGp-Nw-Qj2" customClass="MainViewController" customModule="Menthas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wh6-Vq-jmB"/>
                         <viewControllerLayoutGuide type="bottom" id="7Wc-3o-vcT"/>
@@ -221,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iIl-Qh-USH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="595.5" y="-1114.5"/>
+            <point key="canvasLocation" x="375.5" y="405.5"/>
         </scene>
         <!--Page Scroll View Controller-->
         <scene sceneID="dGS-hI-lFD">
@@ -254,77 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ltF-H4-toL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082.5" y="-1114.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="dVE-Vz-A5l">
-            <objects>
-                <viewController id="gem-TD-W2n" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Nrw-4D-8hi"/>
-                        <viewControllerLayoutGuide type="bottom" id="vwN-c1-Rmq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="FgK-wf-RzT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="scrollable contents" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ki-Mj-xYx">
-                                <rect key="frame" x="115" y="323" width="145" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vFv-0Y-e9B">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.56470588239999997" green="0.0" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="0Ki-Mj-xYx" firstAttribute="centerX" secondItem="FgK-wf-RzT" secondAttribute="centerX" id="7TI-qy-StQ"/>
-                            <constraint firstItem="0Ki-Mj-xYx" firstAttribute="centerY" secondItem="FgK-wf-RzT" secondAttribute="centerY" id="Gcd-Zi-tFw"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g2a-uJ-V6a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1626.5" y="-1149.5"/>
-        </scene>
-        <!--Page Collection View Controller-->
-        <scene sceneID="gTC-08-TaD">
-            <objects>
-                <collectionViewController id="fv4-kb-LAb" customClass="PageCollectionViewController" customModule="Menthas" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" dataMode="prototypes" id="taX-Gk-RA6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PW7-RL-J26">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PageCollectionViewCell" id="YAk-K4-EB9">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="fv4-kb-LAb" id="z9K-WX-eph"/>
-                            <outlet property="delegate" destination="fv4-kb-LAb" id="l8M-fg-HH1"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" id="iiy-vr-UqM"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qq8-Bk-EQs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="630.5" y="-1094.5"/>
+            <point key="canvasLocation" x="1440.5" y="405.5"/>
         </scene>
         <!--Segment Content View Controller-->
         <scene sceneID="Dqf-eT-ZMh">
@@ -465,7 +230,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QEP-Vl-JuU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1569.5" y="-394.5"/>
+            <point key="canvasLocation" x="908.5" y="1182.5"/>
         </scene>
         <!--Segment Web View Controller-->
         <scene sceneID="ksL-qL-aAv">
@@ -493,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0TB-PV-RTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2046.5" y="-394.5"/>
+            <point key="canvasLocation" x="1440.5" y="1182.5"/>
         </scene>
         <!--Feeds View Controller-->
         <scene sceneID="auW-4S-K5g">
@@ -589,37 +354,16 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="tN8-BO-XiI" id="FPq-nV-IZi"/>
-                        <segue destination="VJH-6k-McR" kind="show" identifier="WebSegue" id="zND-5x-zs4"/>
                         <segue destination="fUi-t8-DqN" kind="show" identifier="EntryPageSegue" id="od3-C8-3bb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kzk-TD-NvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082.5" y="389.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Y6l-Xd-to8">
-            <objects>
-                <viewController id="nSm-Rb-1Fv" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="eCe-De-KVY"/>
-                        <viewControllerLayoutGuide type="bottom" id="4Xn-Vq-cIE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="YCQ-fu-OxR">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6G4-r7-kxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
+            <point key="canvasLocation" x="908.5" y="405.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="smartViewThum" width="738" height="489"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="od3-C8-3bb"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.16470588235294117" green="0.73725490196078436" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
 </document>

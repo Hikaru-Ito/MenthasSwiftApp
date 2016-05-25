@@ -25,8 +25,6 @@ class PageScrollViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "hoge", style: .Plain, target: nil, action: nil)
-        
         self.initScrollContent()
         self.setSegment()
     }
